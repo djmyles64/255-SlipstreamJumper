@@ -22,7 +22,7 @@ namespace Myles {
         public float gapSizeMax = 15;
         public float heightMin = -2;
         public float heightMax = 5;
-        public float widthMin = 2;
+        public float widthMin = 6;
         public float widthMax = 10;
 
 

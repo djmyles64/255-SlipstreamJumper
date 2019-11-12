@@ -56,7 +56,7 @@ namespace Myles {
             //ClampToGroundPlane();
             isGrounded = false;
 
-            
+            DestroyWhenOffscreen();
 
         }
 
@@ -118,7 +118,18 @@ namespace Myles {
             if (fix.y > 0) isGrounded = true;
         }
 
-        
+        private void DestroyWhenOffscreen()
+        {
+
+            if (transform.position.y < -5)
+            {
+
+                Game.GameOver();
+                
+            }
+        }
+
+
 
     }
 }
